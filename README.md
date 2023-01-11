@@ -1,5 +1,5 @@
 # ai-yt-title-generator
-AI that reads YouTube Video Transcript and comes up with Viral Title Ideas
+AI that reads YouTube Video Transcript and comes up with Viral Title Ideas based on what was said in the video. 
 
 
 
