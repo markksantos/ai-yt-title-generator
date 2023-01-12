@@ -1,4 +1,4 @@
-# YouTube Video Transcript Titling
+# YouTube Video Transcript Titling :movie_camera: 
 
 This script utilizes the YouTube Transcript API to fetch the transcript of a given YouTube video, and the OpenAI API to analyze the transcript and generate title ideas for sections of the video. The OpenAI API key is required to use this script.
 
