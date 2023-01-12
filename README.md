@@ -1,20 +1,20 @@
-# ai-yt-title-generator
-AI that reads YouTube Video Transcript and comes up with Viral Title Ideas based on what was said in the video. 
+# YouTube Video Transcript Titling
 
+This script utilizes the YouTube Transcript API to fetch the transcript of a given YouTube video, and the OpenAI API to analyze the transcript and generate title ideas for sections of the video. The OpenAI API key is required to use this script.
 
+## Usage
+1. Replace `video_id` with the YouTube video ID.
+2. Set the `openai.api_key` to your own OpenAI API key.
+3. Run the script.
+4. The script will output the title ideas for different section of videos, along with the timestamp of the section in the video.
 
-1 - Install requirements:
-    - Python 3
-    Run: brew install python
-    - YouTube Transcript API
-    Run: pip3 install youtube_transcript_api
-    - Open AI API
-    Run: pip3 install openai
-    
-2 - Change the 'video_id' variable to the desidered YouTube Video that you want the AI to create the title ideas for.
+## Dependencies
+- `youtube_transcript_api`
+- `openai`
 
-3 - Run the script on the terminal by typing:
-python3 video_transcription.py
+You can install these using `pip install youtube_transcript_api openai`
 
-
-    
+## Customization
+- The `prompt_input` can be changed to adjust the prompt for the OpenAI API.
+- The `max_tokens` can be adjusted to handle transcripts of different lengths.
+- `engine`, `max_tokens`, `n`, `stop`, and `temperature` can also be adjusted in the `openai.Completion.create()` function to fine-tune the results.
